@@ -45,8 +45,8 @@ export default class PickImage extends Component {
 			},
 		})
 			.then((res) => {
+				console.log(JSON.parse(res));
 				res.json();
-				console.log(res);
 			})
 			.then((result) => {
 				console.log("success", result);
